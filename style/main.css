@@ -1,0 +1,784 @@
+article,
+div,
+footer,
+header,
+main,
+nav,
+section {
+  align-items: stretch;
+  border: 0 solid #000;
+  box-sizing: border-box;
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  -webkit-box-align: stretch;
+  -webkit-box-align-items: stretch;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: column;
+}
+
+.navOfEntirety {
+  background-color: rgb(250, 250, 250);
+}
+
+.navContainer {
+  flex-basis: 75px;
+  z-index: 1;
+}
+
+.navContainerSetting {
+  -webkit-box-align: center;
+  align-items: center;
+  border-bottom: 1px solid rgb(219, 219, 219);
+  position: fixed;
+  height: 77px;
+  top: 0;
+  width: 100%;
+  background-color: rgba(var(--cdc, 255, 255, 255), 1);
+  z-index: 1;
+}
+
+.navContentRow {
+  -webkit-box-align: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-box-pack: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 77px;
+  justify-content: center;
+  max-width: 1010px;
+  padding: 26px 20px;
+  width: 100%;
+}
+
+.navContentLeft {
+  -webkit-box-flex: 1;
+  flex: 1 9999 0%;
+  min-width: 40px;
+}
+
+.instaHomepage {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+.instaTagContainer {
+  -webkit-box-flex: 0;
+  flex: 0 0 auto;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  align-content: stretch;
+  align-items: center;
+}
+
+.inTCLeftIcon {
+  height: 24;
+  width: 24;
+}
+
+.inTCCenterLine {
+  height: 28px;
+  margin: 0 16px;
+  width: 1px;
+  background-color: rgb(38, 38, 38);
+}
+
+.inTCRightTitle {
+  margin-top: 7px;
+  transition: opacity 0.1s ease-out;
+}
+
+img.instagramTitle {
+  height: 32px;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.navContentCenter {
+  height: 28px;
+  -webkit-box-flex: 0;
+  flex: 0 1 auto;
+  min-width: 125px;
+  width: 215px;
+}
+
+input.navSearch {
+  font-size: 16px;
+  -webkit-appearance: none;
+  border: solid 1px #dbdbdb;
+  border-radius: 3px;
+  color: #262626;
+  outline: 0;
+  padding: 3px 10px 3px 26px;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 18px;
+}
+
+.searchSensorContainer {
+  background: #fafafa;
+  border: solid 1px #dbdbdb;
+  -webkit-box-pack: center;
+  justify-content: center;
+  border-radius: 3px;
+  color: #999;
+  cursor: text;
+  font-size: 14px;
+  font-weight: 300;
+  left: 0;
+  padding: 7px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+
+.searchText {
+  display: inline;
+  left: -5px;
+}
+
+span.sTContainerLeft {
+  margin-right: 6px;
+  vertical-align: baseline;
+  display: inline-block;
+}
+
+span.searchIcon {
+  height: 10px;
+  width: 10px;
+  background-image: url("static/search_104498.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+span.sTCSearch {
+  max-width: 140px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: bottom;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.navContentRight {
+  -webkit-box-align: center;
+  align-items: center;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  flex-wrap: wrap;
+  -webkit-box-flex: 1;
+  flex: 1 0 0%;
+  justify-content: flex-end;
+  -webkit-box-pack: end;
+  z-index: 1;
+}
+
+.navCRRight {
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  padding-left: 24px;
+  white-space: nowrap;
+}
+
+.compassHeartUser:not(:first-child) {
+  margin-left: 28px;
+}
+
+.spriteCompass {
+  height: 24px;
+  width: 24px;
+  background-image: url("https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+}
+
+.spriteHeart {
+  height: 24px;
+  width: 26px;
+  background-image: url("https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+}
+
+.spriteUser {
+  height: 24px;
+  width: 24px;
+  background-image: url("https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+}
+
+main.bodyMain {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  padding-top: 35px;
+  background-color: #efefef;
+}
+
+div.feeds {
+  -webkit-flex: 2;
+  flex: 2 1 70%;
+  border: 1px solid rgb(219, 219, 219);
+  margin-left: 15%;
+  margin-right: 3%;
+  background-color: white;
+}
+
+article.feedsMain {
+  display: flex;
+  min-width: 300px;
+  flex: 2 1 auto;
+}
+
+header.articleHeader {
+  flex-direction: row;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  display: flex;
+  -webkit-box-orient: horizontal;
+}
+
+.arHeProfileContainer {
+  /* flex-grow: 1; */
+  flex-basis: 0;
+  -webkit-box-flex: 1;
+  margin-right: 15px;
+}
+
+span.arHeprofileCanvas {
+  height: 32px;
+  width: 32px;
+  display: block;
+  margin-left: 10px;
+  -webkit-box-flex: 0;
+  flex: none;
+}
+
+img.arHeProfile {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+}
+
+.arHeId {
+  flex: 1 1 30px;
+  -webkit-box-flex: 2;
+  min-width: 0;
+  color: #262626;
+}
+
+.arHeIdText {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #262626;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  margin-top: 3px;
+}
+
+.hiddenOption {
+  flex: 0 2 25px;
+  -webkit-box-flex: 1;
+  margin-left: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.hOButton {
+  min-height: 15px;
+  min-width: 15px;
+}
+.hOption {
+  height: 15px;
+  width: 15px;
+}
+
+.present {
+  display: flex;
+}
+
+.presentImageContainer {
+  display: block;
+  width: 100%;
+  flex: 1 1 auto;
+}
+
+img.presentImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section.likeCommentShareSave {
+  flex: 1 1 auto;
+  flex-direction: row;
+  display: flex;
+  display: -webkit-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.likeContainer {
+  display: inline-block;
+  margin-left: 12px;
+}
+
+button.lCSSButton {
+  min-height: 40px;
+  min-width: 40px;
+  align-items: center;
+  background: 0 0;
+  border: 0;
+  display: flex;
+  flex-grow: 0;
+  cursor: pointer;
+  padding: 0;
+  justify-content: center;
+}
+
+.commentContainer {
+  display: inline-block;
+}
+
+.spriteComment {
+  height: 30px;
+  width: 32px;
+  background-image: url("https://cdn.pixabay.com/photo/2018/11/13/21/43/instagram-3814056_960_720.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+}
+
+.shareContainer {
+  display: inline-block;
+}
+
+.spriteShare {
+  height: 25px;
+  width: 25px;
+  background-image: url("../img/export.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+}
+
+.saveContainer {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: 5px;
+}
+
+.spriteSave {
+  height: 23px;
+  width: 23px;
+  background-image: url("../img/flag.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+}
+.peopleCommentContainer {
+  margin-top: 8px;
+  flex: 1 1 auto;
+  display: inline-block;
+}
+
+.likePeopleContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+
+  margin-bottom: 7px;
+}
+
+.likePeopleRepresentationProfileImage {
+  margin: 0 13px 0 0;
+  display: block;
+}
+
+.lPRPImageContainer {
+  height: 23px;
+  width: 23px;
+  display: block;
+  margin-left: 10px;
+
+  flex: none;
+  background-color: #fafafa;
+  flex: 0 0 auto;
+  overflow: hidden;
+}
+
+img.lPRPImage {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+}
+
+.likePeopleCountContainer {
+  display: block;
+  flex: 1 1 auto;
+}
+
+.likePeopleCount {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.commentText {
+  display: flex;
+  flex-direction: row;
+}
+
+.commentIdContainer {
+  flex: 0 0 auto;
+  font: bold;
+  margin-right: 5px;
+}
+
+.commentContentContainer {
+  flex: 0 0 auto;
+  color: black;
+  font-size: 85%;
+  font-family: sans-serif;
+  margin-right: 10px;
+}
+
+.commentContentAddContainer {
+  flex: 0 0 auto;
+  font-size: 75%;
+  color: #999;
+  text-align: center;
+  padding-top: 3px;
+}
+
+span.commentContent {
+  margin-top: 2px;
+}
+
+div.cTDate {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  flex: 0 0 auto;
+  align-content: stretch;
+  display: block;
+}
+
+time.cTDtime {
+  font-size: 15px;
+  line-height: 13px;
+  color: #999;
+}
+
+section.writeComment {
+  display: block;
+  margin-top: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-top: 1px solid #efefef;
+  color: #999;
+  font-size: 14px;
+  line-height: 18px;
+  min-height: 50px;
+  justify-content: center;
+  flex-shrink: 0;
+  max-height: 75px;
+}
+
+form.createCommentForm {
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  position: relative;
+  flex-grow: 1;
+  align-items: center;
+}
+
+textarea.createComment {
+  background: 0 0;
+  border: 0;
+  color: #262626;
+  font-size: inherit;
+  max-height: 60px;
+  outline: 0;
+  padding: 0;
+  resize: none;
+  display: flex;
+  flex-grow: 1;
+  text-justify: center;
+}
+
+button.createWritingComment {
+  opacity: 0.6;
+
+  border: 0;
+  color: rgba(var(--h5f, 56, 151, 245), 1);
+  display: inline;
+  padding: 0;
+  position: relative;
+  cursor: pointer;
+  text-transform: inherit;
+  text-overflow: ellipsis;
+  text-align: center;
+
+  font-size: 15px;
+  line-height: 16px;
+}
+
+.mainRight {
+  -webkit-flex: 1;
+  flex: 1 2 30%;
+  justify-content: flex-start;
+  background-color: white;
+}
+
+header.mainRightHeader {
+  flex-direction: row;
+  margin-bottom: 10px;
+
+  display: flex;
+  -webkit-box-orient: horizontal;
+  border: 1px solid #efefef;
+  height: 75px;
+  padding: 16px 16px 16px 0;
+  right: 0;
+  top: 0;
+
+  align-items: center;
+}
+
+.logoWecodeImage {
+  flex-basis: 0;
+  margin-right: 15px;
+}
+
+span.logoImageCanvas {
+  height: 51px;
+  width: 51px;
+  display: block;
+  margin-left: 10px;
+  -webkit-box-flex: 0;
+  flex: none;
+}
+
+img.logoImageIcon {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+}
+
+.mRHTitleContainer {
+  flex: 1 1 30px;
+  min-width: 0;
+  flex-direction: column;
+}
+
+span.mRHTitle {
+  font-size: 22px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 30px;
+}
+
+span.mRHSubtitle {
+  font-size: 15px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 100;
+  color: #999;
+  display: inline-block;
+  opacity: 0.8;
+}
+
+section.story {
+  justify-content: flex-start;
+  align-content: flex-start;
+  max-height: 200px;
+}
+
+.mRSectionHeader {
+  height: 30px;
+  margin-top: 10px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.mRSectionTitle {
+  font-size: 20px;
+  color: #999;
+  padding-left: 13px;
+}
+
+.readAllText {
+  color: #262626;
+  font-size: 13px;
+  opacity: 0.5;
+}
+ul.list {
+  list-style: none;
+  left: 0;
+  padding: 0 13px;
+  margin: 0 0 auto;
+}
+
+li.follow {
+  padding-bottom: 0;
+  margin-left: -12px;
+  margin-right: 0;
+  padding: 12px 16px;
+  width: auto;
+  word-wrap: break-word;
+}
+
+.followContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  max-width: 240px;
+}
+
+.followProfile {
+  flex: none;
+  margin: 0 18px 0 0;
+  width: 33px;
+  height: 33px;
+  top: -3px;
+  left: -5px;
+}
+
+img.followProfileImage {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #fafafa;
+  display: block;
+  flex: 0 0 auto;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.storyFollowText {
+  flex-shrink: 1;
+  min-width: 0;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-basis: 85%;
+}
+
+.memberId {
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+}
+
+.sFTDate {
+  flex: 0 0 auto;
+  align-content: flex-start;
+  display: block;
+  height: 15px;
+}
+
+time.sFTtime {
+  font-size: 12px;
+  line-height: 10px;
+  color: #999;
+  margin-top: -6px;
+}
+
+button.favoritesCount {
+  color: #999;
+  background: 0 0;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+  cursor: pointer;
+  display: inline;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 8px;
+  padding: 0;
+}
+
+.followingArea {
+  background-color: rgba(0, 0, 0, 0);
+  flex-shrink: 0;
+  flex-grow: 0;
+  justify-content: center;
+  margin-right: -30px;
+}
+
+button.following {
+  background-color: rgba(0, 0, 0, 0);
+  color: blue;
+  border: 0;
+  cursor: pointer;
+  display: inline;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.infoDiv {
+  display: flex;
+  color: #999;
+}
+
+ul.infoList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: flex-start;
+  padding-left: 0;
+}
+
+li.footerContent {
+  display: inline-block;
+  padding: 2px 2px;
+  color: #999;
+  opacity: 0.6;
+  font-weight: 100;
+  font-size: 12px;
+}
+
+span.footerTitle {
+  font-size: 15px;
+}

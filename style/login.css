@@ -1,0 +1,370 @@
+body, input, textarea, button{
+	color rgba(let(--i1d,38,38,38),1);
+	font-family: -apple-
+	system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica. Arial, snas-serif;
+	font-size: 14px;
+	line-height: 18px;
+	background-color: lightgrey;
+    overflow-y: scroll;
+}
+
+.head {
+	height : 100%;
+	display: flex;
+	flex-shrink: 0;
+	position: relative;
+	align-items: stretch;
+	border: 0 solid black;
+	box-sizing: border-box;
+	flex-direction: column;
+}
+
+.loginSection {
+	min-height: 100%;
+	overflow: hidden;
+}
+
+.loginMain {
+	background-color: rgba(let(--b3f,250,250,250),1);
+	flex-grow: 1;
+	order: 4;
+}
+
+.loginParentArticle {
+	min-height: 100%;
+	overflow: hidden;
+	padding-bottom: 44px;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.loginArticle {
+	margin: 0 auto;
+	max-width: 935px;
+	width: 100%;
+}
+
+.totalBox{
+	color: #262626;
+	margin-top: 12px;
+	max-width: 350px;
+	width: 100%;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+.loginBox {
+	background-color: #fff;
+	border: 1px solid #e6e6e6;
+	border-radius: 1px;
+	margin: 0 0 10px;
+	padding-bottom: 10px 0;
+}
+
+.loginBoxHeader {
+	height: 64px;
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	text-align: center;
+
+}
+
+#westargram {
+	display: block;
+	margin: 0 auto;
+}
+
+
+.loginBoxBody {
+	margin-bottom: 10px;
+}
+
+.authForm {
+	display: flex;
+	flex-direction: column;
+}
+
+.loBBTop {
+	margin-bottom: 24px;
+	flex: 0 0 auto;
+	justify-content: flex-start;
+	align-content: stretch;
+	align-items: stretch;
+}
+
+.-memberDiscriminationBlock {
+	margin: 0 40px 6px;
+}
+
+.-mDBox {
+	align-items: center;
+	border-radius: 3px;
+	box-sizing: border-box;
+	color: #262626;
+	flex-direction: row;
+	font-size: 14px;
+	width: 100%;
+	border: 1px solid #efefef;
+	position: relative;
+}
+
+.-mDBox, .memberAuth{
+	background: #fafafa;
+}
+
+.inputArea {
+	display: flex;
+	height: 36px;
+	flex: 1 0 0;
+	padding: 0;
+	position: relative;
+	margin: 0;
+	min-width: 0;
+}
+
+.typeOfInput {
+	color: #999;
+	font-size: 12px;
+	height: 36px;
+	left: 8px;
+	line-height: 36px;
+	overflow: hidden;
+	pointer-events: none;
+	position: absolute;
+	right: 0;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	user-select: none;
+}
+
+.memberAuth {
+	border: 0;
+	flex: 1 0 0px;
+	margin: 0;
+	outline: 0;
+	overflow: hidden;
+	padding: 9px 0 7px 8px;
+	text-overflow: ellipsis;
+	background: #fafafa;
+}
+
+.i24fI {
+	flex: 0 0 auto;
+	flex-direction: row;
+	height: 100%;
+	padding-right: 8px;
+	vertical-align: middle;
+}
+
+.loginButtonBox {
+	margin-top: 8px;
+	margin-right: 40px;
+	margin-bottom: 8px;
+	margin-left: 40px;
+	flex: 0 0 auto;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;	
+}
+
+.loginButton {
+	opacity: .5;
+	background-color: rgb(51,119,255);
+	border: 1px solid rgb(51,119,255);
+	border-radius: 4px;
+	color: rgb(255,255,255);
+	position: relative;
+	box-sizing: border-box;
+	cursor: pointer;
+	display: block;
+	font-weight: 600;
+	padding: 5px 9px;
+	text-align: center;
+	width: 100%;
+}
+
+.orBox {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	margin: 10px 40px 18px;
+	flex-direction: row;
+}	
+
+.orBoxLine {
+	-webkit-box-flex: 1;
+	flex-grow: 1;
+	flex-shrink: 1;
+	background-color: #efefef;
+	height: 1px;
+	position: relative;
+	top: .45em;
+}
+
+.orBoxText{
+	-webkit-box-flex: 0;
+	color: #999;
+	flex-grow: 0;
+	flex-shrink: 0;
+	font-size: 13px;
+	font-weight: 600;
+	line-height: 15px;
+	margin: 0 18px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.fLBuB {
+	border: 0;
+	
+	display: block;
+	padding: 0;
+	position: relative;
+	background: 0 0;
+	box-sizing: border-box;
+	cursor: pointer;
+	font-weight: 600;
+	text-align: center;
+	text-transform: inherit;
+	text-overflow: ellipsis;
+	user-select: none;
+	width: 100%;	
+}
+
+.coreSpriteFacebookIcon {
+	/*background-position: -300px -319px;*/
+	height: 16px;
+	width: 16px;
+	/*background-image: url("img/icons8-facebook-100.png");*/
+}
+
+.AeB99 {
+	display: inline-block;
+	margin-left: 8px;
+	position: relative;
+	top: 3px;
+}
+
+.facebookOAuthText {
+	color: #375185;
+	margin-left: 20px;
+}
+
+.lostPw {
+	font-size: 12px;
+	line-height: 14px;
+	margin-top: 12px;
+	text-align: center;
+	color: #003569;
+}
+
+.noMemberBox {
+	background: #fff;
+	border: 1px solid #e6e6e6;
+	border-radius: 1px;
+	margin: 0 0 10px;
+	padding: 10px 0;
+}
+
+.noMemberInBox {
+	display: block;
+	color: rgba(let(--f52,153,153,153),1);
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 18px;
+	margin: -3px 0 -4px;	
+}
+
+.dontHaveAnAccount{
+	color: #262626;
+	font-size: 14px;
+	margin: 15px;
+	text-align: center;
+}
+
+.dontHaveAnAccount>a {
+	color: #3897f0;
+}
+
+.join {
+	display: inline!important;
+	margin: 0!important;
+	font-weight: 600px;
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.downloadAppBoxtext {
+	color: #262626;
+	font-size: 14px;
+	line-height: 18px;
+	margin: 10px 20px;
+	text-align: center;
+}
+
+.downloadIconBox {
+	flex-direction: row;
+	justify-content: center;
+	margin: 10px 0;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+}
+
+.storeUrl {
+	margin-right: 8px;
+
+}
+
+.storeIcon {
+	height: 40px;
+
+}
+
+
+.storeUrl:last-child {
+	margin-right: 0;
+}
+
+.contentInfo {
+	order: 5;
+	padding:0 20px;
+	background-color: rgba(let(--b3f,250,250,250),1);
+}
+
+.contentInofDiv {
+	font-size: 12px;
+	font-weight: 600;
+	margin: 0 auto;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+/*mediaquery and general css */
+@media (max-width: 875px) {
+	.contentInofDiv {
+		padding: 10px 0;
+		text-align: center;
+	}
+	.contentInfoList {
+		justify-content: center;
+		margin: 0 auto;
+		max-width: 360px;
+	}
+}
+
+.contentInfoList {
+	flex-grow: 1;
+}
+
+.footerContent {
+	display: inline-block;
+	margin-bottom: 7px;
+	margin-right: 16px;
+}
+
+.footerTitle {
+	color: #999;
+}

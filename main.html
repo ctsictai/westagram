@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Westagram</title>
+    <link href="style/common.css" rel="stylesheet" type="text/css" />
+    <link href="style/main.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="entirePage">
+      <nav class="navOfEntirety">
+        <div class="navContainer">
+          <div class="navContainerSetting">
+            <div class="navContentRow">
+              <div class="navContentLeft">
+                <a class="instaHomepage" href="https://www.instagram.com/">
+                  <div class="instaTagContainer">
+                    <div class="inTCLeftIcon">
+                      <svg
+                        aria-label="Instagram"
+                        class=""
+                        fill="#262626"
+                        height="24"
+                        viewBox="0 0 48 48"
+                        width="24"
+                      >
+                        <path
+                          d="M13.86.13A17 17 0 008 1.26 11 11 0 003.8 4 12.22 12.22 0 001 8.28 18 18 0 00-.11 14.1c-.13 2.55-.13 3.38-.13 9.9s0 7.32.13 9.9A18 18 0 001 39.72 11.43 11.43 0 003.8 44 12.17 12.17 0 008 46.74a17.75 17.75 0 005.82 1.13c2.55.13 3.38.13 9.9.13s7.32 0 9.9-.13a17.82 17.82 0 005.83-1.13A11.4 11.4 0 0043.72 44a11.94 11.94 0 002.78-4.24 17.7 17.7 0 001.13-5.82c.13-2.55.13-3.38.13-9.9s0-7.32-.13-9.9a17 17 0 00-1.13-5.86A11.31 11.31 0 0043.72 4a12.13 12.13 0 00-4.23-2.78A17.82 17.82 0 0033.66.13C31.11 0 30.28 0 23.76 0s-7.31 0-9.9.13m.2 43.37a13.17 13.17 0 01-4.47-.83 7.25 7.25 0 01-2.74-1.79 7.25 7.25 0 01-1.79-2.74 13.23 13.23 0 01-.83-4.47c-.1-2.52-.13-3.28-.13-9.7s0-7.15.13-9.7a12.78 12.78 0 01.83-4.44 7.37 7.37 0 011.79-2.75A7.35 7.35 0 019.59 5.3a13.17 13.17 0 014.47-.83c2.52-.1 3.28-.13 9.7-.13s7.15 0 9.7.13a12.78 12.78 0 014.44.83 7.82 7.82 0 014.53 4.53 13.12 13.12 0 01.83 4.44c.13 2.51.13 3.27.13 9.7s0 7.15-.13 9.7a13.23 13.23 0 01-.83 4.47 7.9 7.9 0 01-4.53 4.53 13 13 0 01-4.44.83c-2.51.1-3.28.13-9.7.13s-7.15 0-9.7-.13m19.63-32.34a2.88 2.88 0 102.88-2.88 2.89 2.89 0 00-2.88 2.88M11.45 24a12.32 12.32 0 1012.31-12.35A12.33 12.33 0 0011.45 24m4.33 0a8 8 0 118 8 8 8 0 01-8-8"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div class="inTCCenterLine"></div>
+                    <div class="inTCRightTitle">
+                      <img
+                        class="instagramTitle"
+                        alt="Instagram"
+                        src="img/logo_text.png"
+                      />
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="navContentCenter">
+                <input
+                  class="navSearch"
+                  type="text"
+                  autocapitalize="none"
+                  placeholder="검색"
+                  value
+                />
+                <div class="searchSensorContainer" role="button" tabindex="0">
+                  <!-- js 이벤트 리스너 실행되는곳 -->
+                  <div class="searchText">
+                    <span class="sTContainerLeft searchIcon"></span>
+                    <!-- 이벤트 리스터 결과 적용 -->
+                    <span class="sTCSearch">검색</span>
+                    <!-- 이벤트 리스터 결과 적용 -->
+                  </div>
+                </div>
+              </div>
+              <div class="navContentRight">
+                <div class="navCRRight">
+                  <div class="compassHeartUser">
+                    <a href="/explore/">
+                      <span class="spriteCompass" aria-label="사람 찾기"></span>
+                    </a>
+                  </div>
+                  <div class="compassHeartUser">
+                    <a class="activate feeds" href="/accounts/activity/">
+                      <span class="spriteHeart" aria-label="활동 피드"></span>
+                    </a>
+                  </div>
+                  <div class="compassHeartUser">
+                    <a class="myProfile" href="/${id}/">
+                      <!-- 내아이디로 링크-->
+                      <span class="spriteUser" aria-label="프로필"></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main class="bodyMain">
+        <div class="feeds">
+          <article class="feedsMain">
+            <header class="articleHeader">
+              <div class="arHeProfileContainer">
+                <span class="arHeprofileCanvas">
+                  <img
+                    class="arHeProfile"
+                    src="https://scontent-icn1-1.cdninstagram.com/vp/91a4a6cf425350138a196ba4df885b9b/5DFE2D10/t51.2885-19/s150x150/64219646_866712363683753_7365878438877462528_n.jpg?_nc_ht=scontent-icn1-1.cdninstagram.com"
+                  />
+                </span>
+              </div>
+              <div class="arHeId">
+                <span class="arHeIdText"
+                  >WeCode<!--(id연동은 백엔드인듯?)--></span
+                >
+              </div>
+              <div class="hiddenOption">
+                <button class="hOButton" type="menu">
+                  <span class="hOption" aria-label="옵션"></span>
+                </button>
+              </div>
+            </header>
+
+            <div class="present">
+              <div class="presentImageContainer">
+                <img
+                  class="presentImage"
+                  src="https://scontent-gmp1-1.cdninstagram.com/vp/7dd7d8e61047035d530ec7b8785e0e28/5E2E6E48/t51.2885-15/e35/69366856_2154583161509048_6271804732968189983_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=1"
+                />
+              </div>
+              <section class="likeCommentShareSave">
+                <span class="likeContainer">
+                  <button class="lCSSButton">
+                    <span aria-label="좋아요" class="spriteHeart"></span>
+                  </button>
+                </span>
+                <span class="commentContainer">
+                  <button class="lCSSButton">
+                    <span aria-label="댓글 달기" class="spriteComment"></span>
+                  </button>
+                </span>
+                <span class="shareContainer">
+                  <button class="lCSSButton">
+                    <span aria-label="게시물 공유" class="spriteShare"></span>
+                  </button>
+                </span>
+                <span class="saveContainer">
+                  <button class="lCSSButton">
+                    <span aria-label="저장" class="spriteSave"></span>
+                  </button>
+                </span>
+              </section>
+              <div class="peopleCommentContainer">
+                <div class="likePeopleContainer">
+                  <div class="likePeopleRepresentationProfileImage">
+                    <div class="lPRPImageContainer">
+                      <img class="lPRPImage" src="img/metallicaprofile.png" />
+                    </div>
+                  </div>
+                  <div class="likePeopleCountContainer">
+                    <span class="likePeopleCount"
+                      >Metallica 외 15명이 좋아합니다.</span
+                    >
+                  </div>
+                </div>
+                <div class="commentText">
+                  <div class="commentIdContainer">
+                    <span class="commentId">AUIU</span>
+                  </div>
+                  <div class="commentContentContainer">
+                    <span class="commentContent">IU Drama 촬영 현장 캡쳐</span>
+                  </div>
+                  <div class="commentContentAddContainer">
+                    <span class="commentContentAdd">더 보기</span>
+                  </div>
+                </div>
+                <div class="cTDate">
+                  <time
+                    class="cTDtime"
+                    datetime="2019-10-13T10:10:10.000Z"
+                    title="2019년 10월 13일"
+                    >18 hours</time
+                  >
+                </div>
+              </div>
+
+              <section class="writeComment">
+                <div class="createCommentContainer">
+                  <form class="createCommentForm">
+                    <textarea
+                      aria-label="댓글 달기..."
+                      placeholder="댓글 달기..."
+                      class="createComment"
+                      autocomplete="off"
+                      autocorrect="off"
+                    ></textarea>
+                    <button class="createWritingComment" type="submit">
+                      게시
+                    </button>
+                  </form>
+                </div>
+              </section>
+            </div>
+          </article>
+        </div>
+        <div class="mainRight">
+          <header class="mainRightHeader">
+            <div class="logoWecodeImage">
+              <span class="logoImageCanvas"
+                ><img
+                  class="logoImageIcon"
+                  src="https://scontent-icn1-1.cdninstagram.com/vp/91a4a6cf425350138a196ba4df885b9b/5DFE2D10/t51.2885-19/s150x150/64219646_866712363683753_7365878438877462528_n.jpg?_nc_ht=scontent-icn1-1.cdninstagram.com"
+              /></span>
+            </div>
+            <div class="mRHTitleContainer">
+              <span class="mRHTitle">wecode_bootcamp</span>
+              <span class="mRHSubtitle">WeCode | 위코드</span>
+            </div>
+          </header>
+          <section class="story">
+            <header class="mRSectionHeader">
+              <span class="mRSectionTitle">스토리</span>
+              <span class="readAllText">모두 보기</span>
+            </header>
+            <div class="storyMain">
+              <ul class="list">
+                <li class="follow">
+                  <div class="followContainer">
+                    <div class="followProfile">
+                      <img
+                        class="followProfileImage"
+                        src="img/icons8-facebook-48.png"
+                      />
+                    </div>
+                    <div class="storyFollowText">
+                      <span class="memberId">Facinglook</span>
+                      <div class="sFTDate">
+                        <time
+                          class="sFTtime"
+                          datetime="2019-10-13T10:10:10.000Z"
+                          title="2019년 10월 13일"
+                          >18 hours</time
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="follow">
+                  <div class="followContainer">
+                    <div class="followProfile">
+                      <img
+                        class="followProfileImage"
+                        src="img/icons8-facebook-48.png"
+                      />
+                    </div>
+                    <div class="storyFollowText">
+                      <span class="memberId">Facinglook</span>
+                      <div class="sFTDate">
+                        <time
+                          class="sFTtime"
+                          datetime="2019-10-13T10:10:10.000Z"
+                          title="2019년 10월 13일"
+                          >18 hours</time
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="remainderList"></li>
+              </ul>
+            </div>
+          </section>
+          <section class="recommand">
+            <header class="mRSectionHeader">
+              <span class="mRSectionTitle">회원님을 위한 추천</span>
+              <span class="readAllText">모두 보기</span>
+            </header>
+            <div class="storyMain">
+              <ul class="list">
+                <li class="follow">
+                  <div class="followContainer">
+                    <div class="followProfile">
+                      <img
+                        class="followProfileImage"
+                        src="img/icons8-facebook-48.png"
+                      />
+                    </div>
+                    <div class="storyFollowText">
+                      <span class="memberId">Ours</span>
+                      <button class="favoritesCount">좋아요 21개</button>
+                    </div>
+                    <div class="followingArea">
+                      <button class="following" type="click">
+                        <span class="followingText">팔로우 </span>
+                      </button>
+                    </div>
+                  </div>
+                </li>
+                <li class="follow">
+                  <div class="followContainer">
+                    <div class="followProfile">
+                      <img
+                        class="followProfileImage"
+                        src="img/icons8-facebook-48.png"
+                      />
+                    </div>
+                    <div class="storyFollowText">
+                      <span class="memberId">Ours</span>
+                      <button class="favoritesCount">좋아요 21개</button>
+                    </div>
+                    <div class="followingArea">
+                      <button class="following" type="click">
+                        <span class="followingText">팔로우 </span>
+                      </button>
+                    </div>
+                  </div>
+                </li>
+                <li class="remainderList"></li>
+              </ul>
+            </div>
+          </section>
+          <footer class="information">
+            <div class="infoDiv" style="max-width: 1012px">
+              <nav class="infoNav">
+                <ul class="infoList">
+                  <li class="footerContent">
+                    <a class="9List" href="">INSTAGRAM 정보</a>
+                  </li>
+                  <li class="footerContent">
+                    <a class="9List" href="">지원</a>
+                  </li>
+                  <li class="footerContent">
+                    <a class="9List" href="">홍보 센터</a>
+                  </li>
+                  <li class="footerContent">
+                    <a class="9List" href="">API</a>
+                  </li>
+                  <li class="footerContent">
+                    <a class="9List" href="">채용 정보</a>
+                  </li>
+                  <li class="footerContent">
+                    <a class="9List" href="">개인정보처리방침</a>
+                  </li>
+                  <li class="footerContent">
+                    <a class="9List" href="">약관</a>
+                  </li>
+                  <li class="footerContent">
+                    <a class="9List" href="">디렉터리</a>
+                  </li>
+                  <li class="footerContent">
+                    <a class="9List" href="">프로필</a>
+                  </li>
+                  <li class="footerContent">
+                    <a class="9List" href="">해시태그</a>
+                  </li>
+                </ul>
+              </nav>
+              <span class="footerTitle">© 2019 INSTAGRAM FROM FACEBOOK</span>
+            </div>
+          </footer>
+        </div>
+      </main>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
